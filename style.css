@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  background-color: aliceblue;
+}
+main {
+  width: 800px;
+  margin: 50px auto;
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.player {
+  width: 50%;
+  text-align: center;
+  padding: 50px 0;
+}
+.player--active {
+  background-color: rgb(113, 184, 255);
+  border: 1px solid black;
+}
+.score {
+  font-size: 50px;
+  margin: 50px 0;
+}
+.current {
+  background-color: darkorange;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  font-size: 23px;
+}
+.current-label {
+  margin-bottom: 10px;
+}
+.dice {
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%);
+}
+.btn {
+  transform: translate(-50%);
+  left: 50%;
+  position: absolute;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn--new {
+  top: 5%;
+}
+.btn--roll {
+  bottom: 30%;
+}
+.btn--hold {
+  bottom: 10%;
+}
+.hidden {
+  display: none;
+}
+.player--winner {
+  background-color: green;
+}
